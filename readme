@@ -1,0 +1,23 @@
+first we have set up the virtual environment.
+
+install package of flask request to get the dependencies in our virtual environment.
+
+The next step is to setup our directory structure for the application. Currently, our application has two directories namely database and services. The database directory hosts the files containing some dummy data for the users and todo lists made by the users.
+
+The services directory holds the code for our individual services - in this case the user service and todo service.
+
+Create a user and todo files and save it as json files extension.
+
+So, let's start with the code, first we import the dependencies for the service
+
+app = Flask(name)
+
+import our users database in the service it as a JSON file
+
+The next step is to write our application endpoints, a simple hello world entrypoint can be created
+
+The @app.route helps set the application route. The above example helps us setup a hello world application point.
+
+Using the same technique we can come up with the other end points for our service. Writing the complete code doesn't seem feasible for this post. You can refer to the repository link provided above for the complete code of the application.
+
+The final step in writing the service will be to run the server as soon as the application is called. This can be achieved by the following set of code for our user microservice
